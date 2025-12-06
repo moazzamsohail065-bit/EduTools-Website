@@ -22,14 +22,14 @@
         .navbar { background: linear-gradient(135deg, #004d00 0%, #11998e 100%); border-bottom: 4px solid #fff; }
         .navbar-brand { font-weight: bold; color: white !important; letter-spacing: 1px; }
 
-        /* Ad Container Styles */
+        /* Ad Box */
         .ad-box {
             text-align: center; margin: 15px auto; 
             background: #fff; border: 1px dashed #006400; padding: 5px;
             overflow: hidden; max-width: 350px;
         }
         
-        /* Footer Sticky Ad (728x90) */
+        /* Footer Sticky Ad */
         .sticky-ad {
             position: fixed; left: 0; bottom: 0; width: 100%;
             background: white; text-align: center; z-index: 9999;
@@ -38,7 +38,7 @@
             height: 100px; border-top: 3px solid #006400;
         }
 
-        /* Cards */
+        /* Feature Cards */
         .feature-card {
             border: none; border-radius: 15px; padding: 15px;
             background: white; text-align: center; transition: 0.3s;
@@ -51,12 +51,7 @@
         .active-view { display: block; }
         @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
 
-        /* Form Styling */
-        .form-label { font-weight: bold; color: #004d00; }
-        .form-select, .form-control { border: 2px solid #a5d6a7; border-radius: 10px; }
-        .form-select:focus, .form-control:focus { border-color: #006400; box-shadow: 0 0 5px rgba(0,100,0,0.3); }
-
-        /* Game Styles */
+        /* Games Styles */
         .ttt-board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 250px; margin: 20px auto; }
         .ttt-cell { width: 70px; height: 70px; background: #fff; border: 3px solid #006400; font-size: 40px; font-weight: bold; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 10px; color: #006400; }
         #snake-canvas { background-color: #000; border-radius: 10px; border: 4px solid #006400; display: block; margin: 0 auto; }
@@ -70,7 +65,7 @@
     <!-- 📢 1. SOCIAL BAR AD -->
     <script type="text/javascript" src="//pl28185755.effectivegatecpm.com/09/a8/5f/09a85fb4fd4acbfb73562548f399f7b7.js"></script>
     
-    <!-- 📢 2. NATIVE AD SCRIPT -->
+    <!-- 📢 2. NATIVE AD -->
     <script type="text/javascript" src="//pl28194772.effectivegatecpm.com/d8/22/16/d82216ee913fcd98eeb249ae03e49562.js"></script>
 
 </head>
@@ -98,40 +93,41 @@
 
         <h3 class="text-center fw-bold mb-4 text-success">Select Service</h3>
         <div class="row g-3">
-            
             <!-- Result Checker -->
             <div class="col-12">
                 <div class="feature-card bg-success text-white" onclick="showSection('result-view')">
                     <div class="text-white fs-1"><i class="fas fa-poll-h"></i></div>
-                    <h4 class="mt-2 fw-bold">Check Online Result</h4>
-                    <small>Sahiwal & All Pakistan Boards</small>
+                    <h4 class="mt-2 fw-bold">Check Result 2025</h4>
+                    <small>Sahiwal & All Boards</small>
                 </div>
             </div>
-
             <!-- Games & Tools -->
             <div class="col-6"><div class="feature-card" onclick="showSection('snake-view'); initSnake();"><div class="text-success fs-1"><i class="fas fa-snake"></i></div><h6 class="mt-2 fw-bold">Snake Game</h6></div></div>
             <div class="col-6"><div class="feature-card" onclick="showSection('spin-view')"><div class="text-danger fs-1"><i class="fas fa-dharmachakra"></i></div><h6 class="mt-2 fw-bold">Spin & Win</h6></div></div>
             <div class="col-6"><div class="feature-card" onclick="showSection('downloader-view')"><div class="text-info fs-1"><i class="fas fa-download"></i></div><h6 class="mt-2 fw-bold">Downloader</h6></div></div>
             <div class="col-6"><div class="feature-card" onclick="showSection('student-view')"><div class="text-dark fs-1"><i class="fas fa-book"></i></div><h6 class="mt-2 fw-bold">Notes</h6></div></div>
-            
         </div>
     </div>
 </div>
 
-<!-- 2. 🎓 DETAILED RESULT CHECKER (UPDATED) -->
+<!-- 2. RESULT CHECKER (FIXED) -->
 <div id="result-view" class="section-view container mt-3">
     <button class="btn btn-outline-success btn-sm rounded-pill mb-3" onclick="showHome()">← Back Home</button>
     <div class="card p-4 border-0 shadow rounded-4">
         <h3 class="text-center fw-bold text-success mb-3"><i class="fas fa-university"></i> Result Portal</h3>
         
+        <div class="alert alert-info small">
+            <strong>Note:</strong> Select Board aur Roll No likhein. Aapko Official Website par redirect kiya jayega.
+        </div>
+
         <!-- 📢 AD BOX -->
         <div class="ad-box mb-3"><script type="text/javascript" src="//pl28194772.effectivegatecpm.com/d8/22/16/d82216ee913fcd98eeb249ae03e49562.js"></script></div>
 
         <!-- BOARD SELECT -->
         <div class="mb-3">
-            <label class="form-label">Select Board (City):</label>
+            <label class="form-label fw-bold">Select Board:</label>
             <select class="form-select" id="resBoard">
-                <option value="sahiwal">BISE Sahiwal (Punjab)</option>
+                <option value="sahiwal">BISE Sahiwal</option>
                 <option value="lahore">BISE Lahore</option>
                 <option value="multan">BISE Multan</option>
                 <option value="faisalabad">BISE Faisalabad</option>
@@ -142,18 +138,16 @@
                 <option value="rawalpindi">BISE Rawalpindi</option>
                 <option value="federal">FBISE Federal</option>
                 <option value="karachi">BSEK Karachi</option>
-                <option value="peshawar">BISE Peshawar</option>
-                <option value="quetta">BISE Quetta</option>
             </select>
         </div>
 
         <!-- CLASS SELECT -->
         <div class="row">
             <div class="col-6 mb-3">
-                <label class="form-label">Class:</label>
+                <label class="form-label fw-bold">Class:</label>
                 <select class="form-select" id="resClass">
-                    <option value="9th">9th Class</option>
-                    <option value="10th">10th Class</option>
+                    <option value="9th">9th</option>
+                    <option value="10th">10th</option>
                     <option value="11th">11th (1st Year)</option>
                     <option value="12th">12th (2nd Year)</option>
                 </select>
@@ -161,18 +155,17 @@
             
             <!-- SESSION SELECT -->
             <div class="col-6 mb-3">
-                <label class="form-label">Session:</label>
+                <label class="form-label fw-bold">Session:</label>
                 <select class="form-select" id="resSession">
-                    <option value="annual2025">Annual 2025</option>
-                    <option value="supply2024">Supply 2024</option>
-                    <option value="annual2024">Annual 2024</option>
+                    <option value="annual">Annual 2025</option>
+                    <option value="supply">Supply</option>
                 </select>
             </div>
         </div>
 
         <!-- ROLL NO INPUT -->
         <div class="mb-3">
-            <label class="form-label">Enter Roll Number:</label>
+            <label class="form-label fw-bold">Roll Number:</label>
             <input type="number" id="rollNo" class="form-control" placeholder="Ex: 564738">
         </div>
         
@@ -182,7 +175,7 @@
         
         <div id="resLoading" class="mt-4 text-center text-success" style="display:none;">
             <div class="spinner-border text-success" role="status"></div>
-            <p class="mt-2 fw-bold">Accessing Official Database...</p>
+            <p class="mt-2 fw-bold">Opening Official Result Page...</p>
         </div>
     </div>
 </div>
@@ -239,16 +232,10 @@
     </div>
 </div>
 
-<!-- 📢 3. FOOTER STICKY AD (728x90) -->
+<!-- 7. FOOTER STICKY AD -->
 <div class="sticky-ad">
     <script type="text/javascript">
-        atOptions = {
-            'key' : '62d3f67cc41c84ad2bbcaf22d90c107c',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
+        atOptions = { 'key' : '62d3f67cc41c84ad2bbcaf22d90c107c', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
     </script>
     <script type="text/javascript" src="//www.highperformanceformat.com/62d3f67cc41c84ad2bbcaf22d90c107c/invoke.js"></script>
 </div>
@@ -256,7 +243,7 @@
 <!-- LOGIC -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    // 📢 DIRECT LINK FUNCTION
+    // 📢 DIRECT LINK AD (Opens in Background)
     function openDirectAd() {
         window.open('https://www.effectivegatecpm.com/kfxuf6why?key=c38d24885b4749e1c130b314ea523fa9', '_blank');
     }
@@ -264,23 +251,22 @@
     function showSection(id) { document.querySelectorAll('.section-view').forEach(el => el.classList.remove('active-view')); document.getElementById(id).classList.add('active-view'); if(id !== 'snake-view') clearInterval(gameInterval); }
     function showHome() { showSection('home-view'); }
 
-    // 🎓 DETAILED RESULT LOGIC
+    // 🎓 RESULT CHECKER (FIXED REDIRECT)
     function checkResult() {
         let rollNo = document.getElementById('rollNo').value;
         let board = document.getElementById('resBoard').value;
-        let cls = document.getElementById('resClass').value;
         
         if(!rollNo) { alert("Please Enter Roll Number!"); return; }
         
-        openDirectAd(); // 🔥 Ad Open
+        // Step 1: Open Ad in NEW TAB
+        openDirectAd();
         
+        // Step 2: Show Loading in Current Tab
         document.getElementById('resLoading').style.display='block';
         
+        // Step 3: Redirect Current Page to Result (After 2 seconds)
         setTimeout(() => {
-            document.getElementById('resLoading').style.display='none';
             let u = "";
-            
-            // Redirect Logic for Each Board
             if(board === 'sahiwal') u = "https://bisesahiwal.edu.pk/all-results/";
             else if(board === 'lahore') u = "http://result.biselahore.com/";
             else if(board === 'multan') u = "https://web.bisemultan.edu.pk/results/";
@@ -292,20 +278,17 @@
             else if(board === 'rawalpindi') u = "https://biserawalpindi.edu.pk/results/";
             else if(board === 'federal') u = "https://www.fbise.edu.pk/result-main.php";
             else if(board === 'karachi') u = "https://bsek.edu.pk/results";
-            else if(board === 'peshawar') u = "https://www.bisep.edu.pk/results/";
-            else if(board === 'quetta') u = "https://bbiseqta.edu.pk/";
+            else u = "https://www.google.com/search?q=BISE+" + board + "+result+2025";
             
-            // Backup Search if link breaks
-            if(u === "") u = "https://www.google.com/search?q=BISE+" + board + "+" + cls + "+result+check+online";
-            
-            window.open(u, '_blank');
+            // 🔥 FIXED: Direct Redirect (Browser won't block this)
+            window.location.href = u; 
         }, 2000);
     }
 
     // Spin Logic
     let deg = 0; 
     function spinWheel() {
-        openDirectAd(); 
+        openDirectAd(); // Ad Open
         let w = document.getElementById('wheel'); 
         deg += Math.floor(Math.random() * 3000) + 1800; 
         w.style.transform = `rotate(${deg}deg)`; 
@@ -332,4 +315,4 @@
     function startDownload() { let u = document.getElementById('dlUrl').value.trim(); document.getElementById('loadingMsg').style.display='block'; setTimeout(() => { document.getElementById('loadingMsg').style.display='none'; if(u.includes('instagram')) window.open('https://snapinsta.to/en2'); else if(u.includes('youtu')) window.open('https://ssyoutube.com/en/watch?v='+u.split('v=')[1]); else if(u.includes('tiktok')) window.open('https://snaptik.app/'); else window.open('https://savefrom.net/'); }, 1500); }
 </script>
 </body>
-    </html>
+        </html>
