@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moazzam Hub - Student Portal</title>
+    <title>Moazzam Hub - Student Portal & Mods</title>
 
     <!-- ✅ GOOGLE VERIFICATION -->
     <meta name="google-site-verification" content="grZR5ds5hHxrscm-MrGjFzVv9S1w4NlyUVL0qhQFU7w" />
     
     <!-- Meta Tags -->
-    <meta name="description" content="Official Result Portal for BISE Sahiwal & All Pakistan Boards. Download Notes, Model Papers & Play Games.">
+    <meta name="description" content="Download 8 Ball Pool PSH4XX Mod, Check BISE Results 2025, Model Papers & Notes.">
     
-    <!-- Design & Icons -->
+    <!-- Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -26,12 +26,12 @@
         .section-view { display: none; animation: fadeIn 0.3s; }
         .active-view { display: block; }
         @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+        
         /* Game Styles */
         .ttt-board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 250px; margin: 20px auto; }
         .ttt-cell { width: 70px; height: 70px; background: #fff; border: 3px solid #006400; font-size: 40px; font-weight: bold; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 10px; color: #006400; }
-        #snake-canvas { background-color: #000; border-radius: 10px; border: 4px solid #006400; display: block; margin: 0 auto; }
-        .snake-controls { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
-        .ctrl-btn { width: 60px; height: 60px; border-radius: 50%; font-size: 24px; font-weight: bold; background: #006400; color: white; border: none; }
+        
+        /* Spin Wheel */
         .wheel-container { position: relative; width: 250px; height: 250px; margin: 20px auto; }
         .wheel { width: 100%; height: 100%; border-radius: 50%; border: 8px solid #333; background: conic-gradient(#FF5733 0deg 60deg, #33FF57 60deg 120deg, #3357FF 120deg 180deg, #FF33A1 180deg 240deg, #FFD700 240deg 300deg, #33FFF5 300deg 360deg); transition: transform 4s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
         .arrow { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); border-left: 15px solid transparent; border-right: 15px solid transparent; border-top: 25px solid #333; z-index: 10; }
@@ -62,14 +62,40 @@
                     <small>Sahiwal & All Boards</small>
                 </div>
             </div>
+            
+            <!-- 🎱 8 BALL POOL SECTION (NEW) -->
+            <div class="col-6">
+                <div class="feature-card" onclick="showSection('pool-view')">
+                    <img src="https://play-lh.googleusercontent.com/bPz1guJ6Fk3w88TvzqFgpqv913rjOziGKj4tSMqv3zgs0t5p_uT8cnC3pfEtiPECaYNi=w240-h480-rw" width="50" class="mb-2 rounded">
+                    <h6 class="fw-bold">8 Ball Pool Mod</h6>
+                    <small class="text-muted">PSH4XX</small>
+                </div>
+            </div>
+
             <div class="col-6"><div class="feature-card" onclick="showSection('model-view')"><div class="text-primary fs-1"><i class="fas fa-file-alt"></i></div><h6 class="mt-2 fw-bold">Model Papers</h6></div></div>
             <div class="col-6"><div class="feature-card" onclick="showSection('calc-view')"><div class="text-warning fs-1"><i class="fas fa-calculator"></i></div><h6 class="mt-2 fw-bold">Result % Calc</h6></div></div>
-            <div class="col-6"><div class="feature-card" onclick="showSection('snake-view'); initSnake();"><div class="text-success fs-1"><i class="fas fa-snake"></i></div><h6 class="mt-2 fw-bold">Snake Game</h6></div></div>
             <div class="col-6"><div class="feature-card" onclick="showSection('spin-view')"><div class="text-danger fs-1"><i class="fas fa-dharmachakra"></i></div><h6 class="mt-2 fw-bold">Spin & Win</h6></div></div>
             <div class="col-6"><div class="feature-card" onclick="showSection('downloader-view')"><div class="text-info fs-1"><i class="fas fa-download"></i></div><h6 class="mt-2 fw-bold">Downloader</h6></div></div>
             <div class="col-6"><div class="feature-card" onclick="showSection('student-view')"><div class="text-dark fs-1"><i class="fas fa-book"></i></div><h6 class="mt-2 fw-bold">Notes</h6></div></div>
             <div class="col-12"><div class="feature-card" onclick="showSection('ttt-view')"><div class="text-primary fs-1"><i class="fas fa-th"></i></div><h6 class="mt-2 fw-bold">Tic Tac Toe</h6></div></div>
         </div>
+    </div>
+</div>
+
+<!-- 🎱 8 BALL POOL DOWNLOAD PAGE (NEW) -->
+<div id="pool-view" class="section-view container mt-3 text-center">
+    <button class="btn btn-secondary btn-sm rounded-pill mb-3" onclick="showHome()">← Back</button>
+    <div class="card p-4 border-0 shadow rounded-4">
+        <img src="https://play-lh.googleusercontent.com/bPz1guJ6Fk3w88TvzqFgpqv913rjOziGKj4tSMqv3zgs0t5p_uT8cnC3pfEtiPECaYNi=w240-h480-rw" class="img-fluid rounded mx-auto mb-3" style="width: 100px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        <h3 class="fw-bold text-primary">8 Ball Pool PSH4XX</h3>
+        <p class="text-muted">Latest Mod Menu APK (Anti-Ban)</p>
+        
+        <div class="ad-box mb-3"><script type="text/javascript" src="//pl28194772.effectivegatecpm.com/d8/22/16/d82216ee913fcd98eeb249ae03e49562.js"></script></div>
+        
+        <a href="https://www.mediafire.com/file/5mi4di98ev8hrcl/8Ball_pool_%2540bnkpsh4xx.apk/file" target="_blank" class="btn btn-primary w-100 rounded-pill fw-bold py-3 shadow fs-5">
+            <i class="fas fa-download"></i> Download APK
+        </a>
+        <p class="mt-2 small text-muted">File Size: 100MB+ | Server: MediaFire</p>
     </div>
 </div>
 
@@ -133,18 +159,7 @@
     </div>
 </div>
 
-<!-- 5. SNAKE GAME -->
-<div id="snake-view" class="section-view container mt-3 text-center">
-    <button class="btn btn-secondary btn-sm rounded-pill mb-3" onclick="showHome()">← Exit</button>
-    <div class="card p-3 border-0 shadow rounded-4 bg-light">
-        <h4 class="fw-bold text-success">Snake Game</h4>
-        <p class="small">Score: <span id="snakeScore">0</span></p>
-        <canvas id="snake-canvas" width="300" height="300"></canvas>
-        <div class="snake-controls"><button class="btn ctrl-btn" onclick="changeDirection('LEFT')">←</button><div class="d-flex flex-column gap-2"><button class="btn ctrl-btn" onclick="changeDirection('UP')">↑</button><button class="btn ctrl-btn" onclick="changeDirection('DOWN')">↓</button></div><button class="btn ctrl-btn" onclick="changeDirection('RIGHT')">→</button></div>
-    </div>
-</div>
-
-<!-- 6. SPIN & WIN -->
+<!-- 5. SPIN & WIN -->
 <div id="spin-view" class="section-view container mt-3 text-center">
     <button class="btn btn-secondary btn-sm rounded-pill mb-3" onclick="showHome()">← Back</button>
     <div class="card p-4 border-0 shadow rounded-4 align-items-center">
@@ -155,7 +170,7 @@
     </div>
 </div>
 
-<!-- 7. DOWNLOADER -->
+<!-- 6. DOWNLOADER -->
 <div id="downloader-view" class="section-view container mt-3">
     <button class="btn btn-secondary btn-sm rounded-pill mb-3" onclick="showHome()">← Back</button>
     <div class="card p-4 border-0 shadow rounded-4 text-center">
@@ -167,7 +182,7 @@
     </div>
 </div>
 
-<!-- 8. NOTES -->
+<!-- 7. NOTES -->
 <div id="student-view" class="section-view container mt-3">
     <button class="btn btn-secondary btn-sm rounded-pill mb-3" onclick="showHome()">← Back</button>
     <div class="card p-4 border-0 shadow rounded-4">
@@ -180,7 +195,7 @@
     </div>
 </div>
 
-<!-- 9. TIC TAC TOE -->
+<!-- 8. TIC TAC TOE -->
 <div id="ttt-view" class="section-view container mt-3 text-center">
     <button class="btn btn-secondary btn-sm rounded-pill mb-3" onclick="showHome()">← Back</button>
     <div class="card p-4 border-0 shadow rounded-4">
@@ -193,8 +208,8 @@
         </div>
         <button class="btn btn-danger btn-sm mt-3" onclick="resetTTT()">Restart Game</button>
     </div>
-            </div>
-            <!-- 📢 FOOTER AD -->
+    </div>
+    <!-- 📢 FOOTER AD -->
 <div class="sticky-ad">
     <script type="text/javascript">
         atOptions = { 'key' : '62d3f67cc41c84ad2bbcaf22d90c107c', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
@@ -206,10 +221,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     function openDirectAd() { window.open('https://www.effectivegatecpm.com/kfxuf6why?key=c38d24885b4749e1c130b314ea523fa9', '_blank'); }
-    function showSection(id) { document.querySelectorAll('.section-view').forEach(el => el.classList.remove('active-view')); document.getElementById(id).classList.add('active-view'); if(id !== 'snake-view') clearInterval(gameInterval); }
+    function showSection(id) { document.querySelectorAll('.section-view').forEach(el => el.classList.remove('active-view')); document.getElementById(id).classList.add('active-view'); }
     function showHome() { showSection('home-view'); }
 
-    // ✅ CHECK RESULT (SAHIWAL ALL-RESULT LINK)
+    // ✅ CHECK RESULT
     function checkResult() {
         let rollNo = document.getElementById('rollNo').value;
         let board = document.getElementById('resBoard').value;
@@ -219,8 +234,6 @@
         setTimeout(() => {
             document.getElementById('resLoading').style.display='none';
             let u = "";
-            
-            // ✅ SAHIWAL DIRECT LINK
             if(board === 'sahiwal') u = "https://bisesahiwal.edu.pk/allresult/"; 
             else if(board === 'lahore') u = "http://result.biselahore.com/";
             else if(board === 'multan') u = "https://web.bisemultan.edu.pk/";
@@ -233,7 +246,6 @@
             else if(board === 'federal') u = "https://www.fbise.edu.pk/";
             else if(board === 'karachi') u = "https://bsek.edu.pk/";
             else u = "https://www.google.com/search?q=BISE+" + board + "+result+2025";
-            
             window.location.href = u;
         }, 2000);
     }
@@ -248,13 +260,6 @@
 
     // Spin
     let deg = 0; function spinWheel() { openDirectAd(); let w = document.getElementById('wheel'); deg += Math.floor(Math.random() * 3000) + 1800; w.style.transform = `rotate(${deg}deg)`; setTimeout(() => { let p = Math.floor(Math.random() * 500) + 50; document.getElementById('spin-result').innerText = `Points: ${p}`; alert(`You won ${p} Points!`); }, 4000); }
-
-    // Snake
-    let canvas, ctx, gameInterval, snake = [{x: 10, y: 10}], food = {x: 15, y: 15}, dx = 0, dy = 0, score = 0, gridSize = 20, tileCount = 15;
-    function initSnake() { canvas = document.getElementById('snake-canvas'); ctx = canvas.getContext('2d'); resetSnake(); gameInterval = setInterval(gameLoop, 150); }
-    function gameLoop() { snake[0].x += dx; snake[0].y += dy; if(snake[0].x < 0) snake[0].x = tileCount -1; if(snake[0].x >= tileCount) snake[0].x = 0; if(snake[0].y < 0) snake[0].y = tileCount -1; if(snake[0].y >= tileCount) snake[0].y = 0; ctx.fillStyle = '#000'; ctx.fillRect(0, 0, canvas.width, canvas.height); ctx.fillStyle = '#fff'; ctx.fillRect(food.x * gridSize, food.y * gridSize, gridSize - 2, gridSize - 2); ctx.fillStyle = '#11998e'; for(let i=0; i<snake.length; i++) { ctx.fillRect(snake[i].x * gridSize, snake[i].y * gridSize, gridSize - 2, gridSize - 2); if(i > 0 && snake[i].x == snake[0].x && snake[i].y == snake[0].y) resetSnake(); } if(snake[0].x == food.x && snake[0].y == food.y) { score++; document.getElementById('snakeScore').innerText = score; snake.push({x: snake[snake.length-1].x, y: snake[snake.length-1].y}); food.x = Math.floor(Math.random() * tileCount); food.y = Math.floor(Math.random() * tileCount); } for(let i=snake.length-1; i>0; i--) { snake[i].x = snake[i-1].x; snake[i].y = snake[i-1].y; } }
-    function changeDirection(dir) { if(dir === 'UP' && dy !== 1) { dx=0; dy=-1; } if(dir === 'DOWN' && dy !== -1) { dx=0; dy=1; } if(dir === 'LEFT' && dx !== 1) { dx=-1; dy=0; } if(dir === 'RIGHT' && dx !== -1) { dx=1; dy=0; } }
-    function resetSnake() { snake = [{x: 10, y: 10}]; dx = 0; dy = 0; score = 0; document.getElementById('snakeScore').innerText = '0'; }
 
     // TTT & Downloader
     let tttBoard = ['','','','','','','','',''], tttTurn = 'X', tttActive = true;
